@@ -12,6 +12,8 @@ import { FinalCTA } from './components/FinalCTA';
 import { PartnerModal } from './components/PartnerModal';
 import { Footer } from './components/Footer';
 
+import { CustomCursor } from './components/CustomCursor';
+
 export function App() {
   // Initialize Lenis smooth scroll
   useSmoothScroll();
@@ -29,6 +31,9 @@ export function App() {
 
   return (
     <div className="min-h-screen bg-[#06080F] text-slate-100 selection:bg-cyan-500/30 selection:text-cyan-200">
+      {/* Sci-fi Target Custom Cursor */}
+      <CustomCursor />
+
       {/* Fixed Navigation Header */}
       <Navigation onOpenPartnerModal={handleOpenPartnerModal} />
 
